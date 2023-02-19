@@ -1,16 +1,27 @@
-# forgot_password_form
+## Forgot Password Form App UI with Navigation Support
 
-A new Flutter project.
+#### - A Simple & Clean Flutter Forgot Password Form App UI.
 
-## Getting Started
+## About Forgot Password Form App
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### - This is Material Guidelines based Forgot Password Form app with pinput Package for Pin code input (OTP) text field Support.
+#### - We used Material 2 Components to build this Forgot Password Form Page
+## Package info - 
+#### - Package Name = [ pinput: ^2.2.30 ]
+#### - Package Link = [ https://pub.dev/packages/pinput ]
+#### - Package Features ==>
+##### - Pin code input (OTP) text field, iOS SMS autofill, Android SMS autofill One Time Code, Password, Passcode, Captcha, Security, Coupon, Wowcher, 2FA, Two step verification
+##### - Animated Decoration Switching
+Form validation
+SMS Autofill on iOS
+SMS Autofill on Android
+Standard Cursor
+Custom Cursor
+Cursor Animation
+Copy From Clipboard
+Ready For Custom Keyboard
+Standard Paste option
+Obscuring Character
+Obscuring Widget
+Haptic Feedback
+Close Keyboard After Completion
