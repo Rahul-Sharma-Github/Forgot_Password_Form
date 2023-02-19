@@ -73,13 +73,14 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Padding(
-                      padding: EdgeInsets.all(10.0),
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
                       child: Text(
                         'Send',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w600,
+                          color: Colors.black.withOpacity(0.7),
                         ),
                       ),
                     ),

@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       GoRoute(
         path: '/',
         builder: (BuildContext context, GoRouterState state) {
-          return const ForgotPasswordPage();
+          return const LoginPage();
         },
         routes: <RouteBase>[
           GoRoute(
@@ -31,6 +31,12 @@ class MyApp extends StatelessWidget {
             path: 'forgotPassword',
             builder: (BuildContext context, GoRouterState state) {
               return const ForgotPasswordPage();
+            },
+          ),
+          GoRoute(
+            path: 'verification',
+            builder: (BuildContext context, GoRouterState state) {
+              return const VerificationPage();
             },
           ),
         ],
