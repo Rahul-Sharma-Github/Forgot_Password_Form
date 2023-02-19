@@ -111,7 +111,7 @@ class _VerificationPageState extends State<VerificationPage> {
                           ),
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () => context.go('/'),
                       child: const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Icon(
