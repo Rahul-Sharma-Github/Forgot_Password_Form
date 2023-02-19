@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 
 import 'package:go_router/go_router.dart';
 
-class ForgotPasswordPage extends StatefulWidget {
-  const ForgotPasswordPage({super.key});
+class VerificationPage extends StatefulWidget {
+  const VerificationPage({super.key});
 
   @override
-  State<ForgotPasswordPage> createState() => _ForgotPasswordPageState();
+  State<VerificationPage> createState() => _VerificationPageState();
 }
 
-class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
+class _VerificationPageState extends State<VerificationPage> {
   TextEditingController forgotPasswordController = TextEditingController();
 
   @override
@@ -28,7 +28,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
               child: const Padding(
                 padding: EdgeInsets.all(20.0),
                 child: Text(
-                  'Forgot Password ?',
+                  'Verification',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 28,
@@ -93,7 +93,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                           ),
                         ),
                       ),
-                      onPressed: () => context.go('/verification'),
+                      onPressed: () {},
                       child: const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Icon(
