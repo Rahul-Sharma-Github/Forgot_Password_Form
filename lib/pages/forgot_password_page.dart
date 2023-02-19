@@ -84,23 +84,24 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                       ),
                     ),
                     ElevatedButton(
-                        style: ButtonStyle(
-                          shape:
-                              MaterialStateProperty.all<RoundedRectangleBorder>(
-                            RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(32),
-                            ),
+                      style: ButtonStyle(
+                        shape:
+                            MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(32),
                           ),
                         ),
-                        onPressed: () {},
-                        child: const Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.arrow_right_alt_sharp,
-                            size: 35,
-                            color: Colors.white,
-                          ),
-                        ))
+                      ),
+                      onPressed: () {},
+                      child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Icon(
+                          Icons.arrow_right_alt_sharp,
+                          size: 35,
+                          color: Colors.white,
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
