@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'pages/forgot_password_page.dart';
 import 'pages/signup_page.dart';
 import 'pages/login_page.dart';
 
@@ -17,13 +18,19 @@ class MyApp extends StatelessWidget {
       GoRoute(
         path: '/',
         builder: (BuildContext context, GoRouterState state) {
-          return const LoginPage();
+          return const ForgotPasswordPage();
         },
         routes: <RouteBase>[
           GoRoute(
             path: 'signup',
             builder: (BuildContext context, GoRouterState state) {
               return const RegistrationApp();
+            },
+          ),
+          GoRoute(
+            path: 'forgotPassword',
+            builder: (BuildContext context, GoRouterState state) {
+              return const ForgotPasswordPage();
             },
           ),
         ],

@@ -98,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () => context.go('/forgotPassword'),
                   child: Text(
                     'Forgot Password ?',
                     style: TextStyle(fontSize: 16, color: Colors.grey[800]),
