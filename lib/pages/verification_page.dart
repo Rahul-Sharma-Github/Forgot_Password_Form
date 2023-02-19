@@ -73,9 +73,23 @@ class _VerificationPageState extends State<VerificationPage> {
               ),
             ),
             Container(
+              child: const Padding(
+                padding: EdgeInsets.symmetric(vertical: 30, horizontal: 60),
+                child: Text(
+                  'Code',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.black54,
+                  ),
+                ),
+              ),
+            ),
+            Container(
               child: Padding(
                 padding:
-                    const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
                 child: Pinput(
                   defaultPinTheme: defaultPinTheme,
                   focusedPinTheme: focusedPinTheme,
@@ -87,16 +101,16 @@ class _VerificationPageState extends State<VerificationPage> {
             Container(
               child: Padding(
                 padding:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                    const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: Text(
                         'Varify Code',
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 18,
                           fontWeight: FontWeight.w600,
                           color: Colors.black.withOpacity(0.7),
                         ),
@@ -130,14 +144,13 @@ class _VerificationPageState extends State<VerificationPage> {
                 padding: const EdgeInsets.all(20.0),
                 child: Padding(
                   padding: const EdgeInsets.all(10.0),
-                  child: Text(
-                    'Resend Code ?',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                      decoration: TextDecoration.underline,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.black.withOpacity(0.7),
+                  child: TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      'Resend Code ?',
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
                     ),
                   ),
                 ),
