@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'pages/forgot_password_page.dart';
 import 'pages/signup_page.dart';
 import 'pages/login_page.dart';
+import 'pages/verification_page.dart';
 
 import 'package:go_router/go_router.dart';
 
