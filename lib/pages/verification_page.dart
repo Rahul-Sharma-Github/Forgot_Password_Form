@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:go_router/go_router.dart';
+import 'package:pinput/pinput.dart';
 
 class VerificationPage extends StatefulWidget {
   const VerificationPage({super.key});
@@ -12,7 +13,27 @@ class VerificationPage extends StatefulWidget {
 }
 
 class _VerificationPageState extends State<VerificationPage> {
-  TextEditingController forgotPasswordController = TextEditingController();
+  // some pinput objects
+
+  // default theme
+  static final defaultPinTheme = PinTheme(
+    width: 56,
+    height: 56,
+    textStyle: const TextStyle(
+        fontSize: 20,
+        color: Color.fromRGBO(30, 60, 87, 1),
+        fontWeight: FontWeight.w600),
+    decoration: BoxDecoration(
+      border: Border.all(color: const Color.fromARGB(255, 235, 186, 205)),
+      borderRadius: BorderRadius.circular(20),
+    ),
+  );
+
+  // focused theme
+  static final focusedPinTheme = defaultPinTheme.copyDecorationWith(
+    border: Border.all(color: Colors.pink),
+    borderRadius: BorderRadius.circular(8),
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -55,14 +76,11 @@ class _VerificationPageState extends State<VerificationPage> {
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
-                child: TextField(
-                  controller: forgotPasswordController,
-                  decoration: InputDecoration(
-                    labelText: 'Email',
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(32.0),
-                    ),
-                  ),
+                child: Pinput(
+                  defaultPinTheme: defaultPinTheme,
+                  focusedPinTheme: focusedPinTheme,
+                  pinputAutovalidateMode: PinputAutovalidateMode.onSubmit,
+                  showCursor: true,
                 ),
               ),
             ),
