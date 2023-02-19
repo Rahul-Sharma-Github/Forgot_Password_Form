@@ -1,5 +1,7 @@
 // ignore_for_file: avoid_unnecessary_containers
 
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 import 'package:go_router/go_router.dart';
@@ -41,7 +43,7 @@ class _VerificationPageState extends State<VerificationPage> {
               child: const Padding(
                 padding: EdgeInsets.symmetric(vertical: 10, horizontal: 60),
                 child: Text(
-                  'Enter the Email Address associated with your account.',
+                  'Enter the verification code, we just sent you on your email address.',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 16,
@@ -76,7 +78,7 @@ class _VerificationPageState extends State<VerificationPage> {
                     Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: Text(
-                        'Send',
+                        'Varify Code',
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w600,
@@ -104,6 +106,24 @@ class _VerificationPageState extends State<VerificationPage> {
                       ),
                     )
                   ],
+                ),
+              ),
+            ),
+            Container(
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Text(
+                    'Resend Code ?',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      decoration: TextDecoration.underline,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black.withOpacity(0.7),
+                    ),
+                  ),
                 ),
               ),
             ),
