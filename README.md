@@ -10,7 +10,7 @@
 #### - Package Name = [ pinput: ^2.2.30 ]
 #### - Package Link = [ https://pub.dev/packages/pinput ]
 #### - Package Features ==>
-##### - Pin code input (OTP) text field, iOS SMS autofill, Android SMS autofill One Time Code, Password, Passcode, Captcha, Security, Coupon, Wowcher, 2FA, Two step verification
+##### - Pin code input (OTP) text field, iOS SMS autofill, Android SMS autofill One Time Code, Password, Passcode, Captcha,         Security, Coupon, Wowcher, 2FA, Two step verification.
 ##### - Animated Decoration Switching
 ##### - Form validation
 ##### - SMS Autofill on iOS
@@ -22,7 +22,7 @@
 ##### - Ready For Custom Keyboard
 ##### - Standard Paste option
 ##### - Obscuring Character
-##### - ##### - Obscuring Widget
+##### - Obscuring Widget
 ##### - Haptic Feedback
 ##### - Close Keyboard After Completion etc.
 #
